@@ -1,6 +1,6 @@
 ## Demo
 
-https://andy770921.github.io/react-npm-boilerplate/demo
+https://andy770921.github.io/react-ts-npm-boilerplate/demo
 
 ## Installation
 
