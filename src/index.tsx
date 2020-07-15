@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Button from './components/Button';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+export { default as Button } from './components/Button';
+
+ReactDOM.render(<Button>rendered button for dev</Button>, document.querySelector('#root'));
