@@ -13,4 +13,4 @@ var Button = function (_a) {
 ReactDOM.render(React.createElement(Button, null, "rendered button for dev"), document.querySelector('#root'));
 
 exports.Button = Button;
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=index.js.map
