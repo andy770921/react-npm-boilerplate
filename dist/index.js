@@ -10,7 +10,9 @@ var Button = function (_a) {
     return (React.createElement("button", { type: "button", onClick: onClick }, children));
 };
 
-ReactDOM.render(React.createElement(Button, null, "rendered button for dev"), document.querySelector('#root'));
+if (process.env.MODE === 'DEV') {
+    ReactDOM.render(React.createElement(Button, null, "rendered button for dev"), document.querySelector('#root'));
+}
 
 exports.Button = Button;
 //# sourceMappingURL=index.js.map
