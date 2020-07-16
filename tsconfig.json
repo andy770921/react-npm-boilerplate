@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "module": "commonjs",
+      "module": "esnext",
       "lib": ["ES2017", "ES7", "ES6", "DOM"],
       "strict": true,
       "noImplicitAny": false,
@@ -11,12 +11,12 @@
       "outDir": "./dist",
       "typeRoots": ["node_modules/@types"],
       "esModuleInterop": true,
-      "sourceMap": false,
+      "sourceMap": true,
       "declaration": true,
       "noEmitOnError": true,
       "jsx": "react"
     },
     "include": ["src/*.ts","src/*.tsx"],
-    "exclude": ["node_modules", "dist"]
+    "exclude": ["node_modules", "dist", "rollup.config.js"]
 }
   

@@ -1,6 +1,6 @@
 {
   "name": "react-ts-npm-boilerplate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A template for a React + TypeScript + npm package",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "npm"
   ],
   "scripts": {
-    "build": "webpack --config webpack.prod-config.js",
+    "build": "rollup -c",
     "start": "webpack-dev-server --open --config webpack.dev-config.js",
     "watch": "tsc -w",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
@@ -56,6 +56,8 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.4.0",
     "prettier": "^1.19.1",
+    "rollup": "^2.21.0",
+    "rollup-plugin-typescript2": "^0.27.1",
     "ts-loader": "^6.2.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.8.3",
