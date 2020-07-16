@@ -1,6 +1,6 @@
 {
   "name": "react-ts-npm-boilerplate",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A template for a React + TypeScript + npm package",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
   },
   "license": "ISC",
   "author": "Andy Chou",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/index",
+  "typings": "dist/index",
   "files": [
     "dist"
   ],
