@@ -1,6 +1,6 @@
 {
   "name": "react-ts-npm-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A template for a React + TypeScript + npm package",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "start": "webpack-dev-server --open --config webpack.dev-config.js",
+    "start": "webpack-dev-server --open",
     "watch": "tsc -w",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "storybook": "start-storybook -p 9001 -c .storybook",
@@ -64,7 +64,6 @@
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.0.9"
+    "webpack-dev-server": "^3.11.0"
   }
 }
