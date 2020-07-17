@@ -1,6 +1,8 @@
 ## Demo:
 
-https://andy770921.github.io/react-ts-npm-boilerplate/demo
+1. storybook: https://andy770921.github.io/react-ts-npm-boilerplate/demo
+
+2. npm package: https://www.npmjs.com/package/react-ts-npm-boilerplate
 
 ## Installation:
 
