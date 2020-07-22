@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
-    mode: 'development',
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -22,5 +20,4 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
-    plugins: [new webpack.DefinePlugin({ 'process.env': JSON.stringify({ MODE: 'DEV' }) })],
 };

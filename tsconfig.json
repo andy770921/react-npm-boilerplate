@@ -11,7 +11,7 @@
       "outDir": "./dist",
       "typeRoots": ["node_modules/@types"],
       "esModuleInterop": true,
-      "sourceMap": true,
+      "sourceMap": false,
       "declaration": true,
       "noEmitOnError": true,
       "jsx": "react"
