@@ -1,6 +1,6 @@
 {
   "name": "react-ts-npm-boilerplate",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A template for a React + TypeScript + npm package",
   "repository": {
     "type": "git",

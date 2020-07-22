@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './components/Button';
+import MyButton from './components/MyButton';
 
-export { default as Button } from './components/Button';
+export { default as MyButton } from './components/MyButton';
 
 if (process.env.MODE === 'DEV') {
-    ReactDOM.render(<Button>rendered button for dev</Button>, document.querySelector('#root'));
+    ReactDOM.render(<MyButton>rendered button for dev</MyButton>, document.querySelector('#root'));
 }

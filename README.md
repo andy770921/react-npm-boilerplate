@@ -26,21 +26,25 @@
 
 ## Usage for third-party import:
 
+1. `npm i react-ts-npm-boilerplate`
+
+2. import library
+
 ```ts
 // TypsScript
 import React, { FC } from 'react';
-import { Button } from 'react-ts-npm-boilerplate';
+import { MyButton } from 'react-ts-npm-boilerplate';
 
 const MyComponent: FC = () => (
     <div>
-        <Button>My Button</Button>
+        <MyButton>My Button</MyButton>
     </div>
 );
 
 export default MyComponent;
 ```
 
-## Other npm commands:
+## Other npm commands for development:
 
 1. `npm run watch`: start typescript watch mode
 
