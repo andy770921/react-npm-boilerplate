@@ -1,7 +1,7 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
-  stories: ['../src/storybook/*.story.tsx'],
+  stories: ['../src/components/**/*.stories.tsx'],
   addons: ['@storybook/addon-actions', '@storybook/addon-links'],
   webpackFinal: async config => {
     config.module.rules.push({

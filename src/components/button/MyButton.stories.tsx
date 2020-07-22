@@ -1,9 +1,9 @@
 import React from 'react';
-import MyButton from '../components/MyButton';
+import MyButton from './MyButton';
 
 export default {
     component: MyButton,
-    title: 'MyButton',
+    title: 'Button',
 };
 
 export const Basic = () => <MyButton onClick={() => alert('alert!')}>button for storybook demo</MyButton>;
