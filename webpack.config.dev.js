@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
-const commonConfig = require('./webpack.common-config.js');
+const commonConfig = require('./webpack.config.common.js');
 
 module.exports = merge(commonConfig, {
     mode: 'development',

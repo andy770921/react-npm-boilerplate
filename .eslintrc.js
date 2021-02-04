@@ -1,7 +1,7 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2021,
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
@@ -70,12 +70,13 @@ module.exports = {
         'node/prefer-global/url': ['error', 'always'],
         'node/no-unsupported-features/es-syntax': [0],
         'node/no-missing-import': [0],
-        'react/jsx-uses-react': 'error',
+        'react/jsx-uses-react': 'off',
         'react/jsx-uses-vars': 'error',
         'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
         'react/static-property-placement': 'off',
         'react/jsx-fragments': [2, 'syntax'],
         'react/prop-types': [2, { skipUndeclared: true }],
+        'react/react-in-jsx-scope': 'off',
         'import/no-extraneous-dependencies': [0],
         'import/named': [0],
         '@typescript-eslint/prefer-optional-chain': ['error'],
@@ -106,11 +107,17 @@ module.exports = {
             version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
         },
     },
-    overrides: [{
-        files: ["test/**/*.js"],
-        rules: {
-            "node/no-unpublished-require": "off"
+    overrides: [
+        {
+            files: ["test/**/*.js"],
+            rules: {
+                "node/no-unpublished-require": "off"
         }
-    }],
+        },
+        {
+            files: ['webpack.config.*.js'],
+            rules: {'@typescript-eslint/no-var-requires': 'off'},
+        }
+    ],
     ignorePatterns: ["node_modules/", "dist/"],
 };
