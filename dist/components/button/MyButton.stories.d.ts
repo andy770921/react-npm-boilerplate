@@ -1,7 +1,7 @@
-import React from 'react';
+/// <reference types="react" />
 declare const _default: {
-    component: React.FC<{
-        onClick?: ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void) | undefined;
+    component: import("react").FC<{
+        onClick?: ((event: import("react").MouseEvent<HTMLButtonElement, MouseEvent>) => void) | undefined;
     }>;
     title: string;
 };
