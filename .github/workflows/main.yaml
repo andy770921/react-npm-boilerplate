@@ -21,7 +21,6 @@ jobs:
       run: npm run lint
       
   build:
-    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: [lint]
    
@@ -34,15 +33,14 @@ jobs:
     - name: Install Dependencies
       run: npm ci
     - name: Build demo site
-      run: npm run build
+      run: npm run build-storybook
     - name: Upload demo site
       uses: actions/upload-artifact@v2
       with:
-        name: storybook-build
+        name: storybook-file
         path: demo
  
   deploy:
-    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: build
     env:
@@ -54,7 +52,7 @@ jobs:
     - name: Download demo site
       uses: actions/download-artifact@v2
       with:
-        name: storybook-build
+        name: storybook-file
         path: demo
     - name: Deploy demo site
       run: |
