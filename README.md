@@ -28,6 +28,11 @@
 
 6. use `npm login` and `npm publish` for publishing to [https://www.npmjs.com/](https://www.npmjs.com/)
 
+7. `npm run watch`: start typescript watch mode
+
+8. `npm run lint`: use ESLint for manually checking files inside src folder
+
+9. Fix format error automatically on save
 ## Usage for third-party import:
 
 1. `npm i react-ts-npm-boilerplate`
@@ -51,8 +56,10 @@ export default MyComponent;
 ## Folder Structure
 
 ``` 
-┌── .vscode                    # VSCode settings for ESLint auto-fix function
+┌── .github/workflows          # Settings for GitHub Actions
 ├── .storybook                 # Storybook settings
+├── .vscode                    # VSCode settings for ESLint auto-fix function
+├── demo                       # Storybook static file
 ├── dist                       # Bundled JS and TS declaration file for deployed npm package
 ├── src                        # All source code
 │    ├── components            # React components
@@ -65,18 +72,8 @@ export default MyComponent;
 ├── README.md                  # README
 ├── package-lock.json          # Package settings that locked the version of dependencies packages
 ├── package.json               # Package settings that listed dependencies packages, npm scripts, project name etc.
-├── webpack.common-config.js   # Webpack settings in both development and production mode
-├── webpack.dev-config.js      # Webpack settings in development mode
-├── webpack.prod-config.js     # Webpack settings in production mode
+├── webpack.config.common.js   # Webpack settings in both development and production mode
+├── webpack.config.dev.js      # Webpack settings in development mode
+├── webpack.config.prod.js     # Webpack settings in production mode
 └── tsconfig.json              # TypeScript settings
 ```
-
-## Other npm commands for development:
-
-1. `npm run watch`: start typescript watch mode
-
-2. `npm run start`: start running dev-server
-
-4. `npm run lint`: use ESLint for manually checking files inside src folder
-
-5. Fix format error automatically on save
