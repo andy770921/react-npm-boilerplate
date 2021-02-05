@@ -1,3 +1,7 @@
+# React-ts-npm-boilerplate
+
+![GitHub Actions Badge](https://github.com/andy770921/react-ts-npm-boilerplate/workflows/Main%20workflow/badge.svg)
+
 ## Demo:
 
 1. storybook: https://andy770921.github.io/react-ts-npm-boilerplate/demo
