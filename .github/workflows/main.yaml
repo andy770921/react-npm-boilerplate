@@ -49,7 +49,6 @@ jobs:
       DEPLOY_TOKEN: ${{secrets.deploy_token}}
       USER_NAME: andy770921
       USER_EMAIL: andy770921@yahoo.com.tw
-      PUBLISH_DIR: ./demo
     
     steps:
     - name: Download demo site
@@ -59,7 +58,6 @@ jobs:
         path: demo
     - name: Deploy demo site
       run: |
-        cd $PUBLISH_DIR
         git init
         git config --local user.email $USER_EMAIL
         git config --local user.name $USER_NAME
