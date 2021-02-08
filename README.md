@@ -8,6 +8,14 @@
 
 2. npm package: https://www.npmjs.com/package/react-ts-npm-boilerplate
 
+## Features:
+
+1. Deploy your own React-Component package to [npmjs.com](https://www.npmjs.com/package/react-ts-npm-boilerplate) easily
+
+2. Fix format error automatically on save
+
+3. Generate static storybook files and host storybook website automatically via GitHub Actions
+
 ## Installation:
 
 1. `npm install`
@@ -28,11 +36,11 @@
 
 6. use `npm login` and `npm publish` for publishing to [https://www.npmjs.com/](https://www.npmjs.com/)
 
+
 7. `npm run watch`: start typescript watch mode
 
 8. `npm run lint`: use ESLint for manually checking files inside src folder
 
-9. Fix format error automatically on save
 ## Usage for third-party import:
 
 1. `npm i react-ts-npm-boilerplate`
@@ -66,7 +74,8 @@ export default MyComponent;
 │    │    └── button           # Component folder
 │    │          ├── MyButton.tsx           # Component for npm package
 │    │          └── MyButton.stories.tsx   # Component displayed in storybook
-│    └── index.tsx             # All Exported component that will be deployed to npm package, and ReactDOM.redner for local development
+│    ├── index.dev.tsx         # Use ReactDOM.redner for local development
+│    └── index.tsx             # Export all components that will be deployed to npm package
 ├── .gitignore                 # Excluded files for ignoring Git version control
 ├── .eslintrc.js               # ESLint settings
 ├── README.md                  # README
