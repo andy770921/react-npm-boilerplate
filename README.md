@@ -74,10 +74,11 @@ export default MyComponent;
 │    │    └── button           # Component folder
 │    │          ├── MyButton.tsx           # Component for npm package
 │    │          └── MyButton.stories.tsx   # Component displayed in storybook
-│    ├── index.dev.tsx         # Use ReactDOM.redner for local development
-│    └── index.tsx             # Export all components that will be deployed to npm package
+│    ├── index.dev.tsx         # Development entry that uses ReactDOM.redner for local development
+│    └── index.tsx             # Production entry that exports all components
 ├── .gitignore                 # Excluded files for ignoring Git version control
 ├── .eslintrc.js               # ESLint settings
+├── index.html                 # HTML for local development
 ├── README.md                  # README
 ├── package-lock.json          # Package settings that locked the version of dependencies packages
 ├── package.json               # Package settings that listed dependencies packages, npm scripts, project name etc.
